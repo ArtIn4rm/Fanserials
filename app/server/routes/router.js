@@ -1,4 +1,21 @@
 const Router = require('express')
 const router = new Router()
+const serialRouter = require('./serialRouter')
+const userRouter = require('./userRouter')
+const seriesRouter = require('./routines/seriesRouter')
+const ordersRouter = require('./routines/ordersRouter')
+const searchRouter = require('./routines/searchRouter')
+const popularRouter = require('./routines/popularRouter')
+const newestRouter = require('./routines/newestRouter')
+const allRouter = require('./routines/allRouter')
+
+router.use('/series', seriesRouter)
+router.use('/orders', ordersRouter)
+router.use('/search', searchRouter)
+router.use('/serial', serialRouter)
+router.use('/popular', popularRouter)
+router.use('/newest', newestRouter)
+router.use('/all', allRouter)
+router.use('/user', userRouter)
 
 module.exports = router
