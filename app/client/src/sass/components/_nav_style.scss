@@ -1,0 +1,141 @@
+.header {
+    background-color: #040402;
+    display: inline-block;
+    height: 115px;
+    width: 1920px;
+}
+
+.header_content {
+    display: block;
+    max-width: 1410px;
+    margin: auto;
+}
+
+.header_icon {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    margin-left: 80px;
+    margin-top: -55px;
+    margin-right: 21px;
+    position: relative;
+}
+
+.fanserials_txt {
+    display: inline-flex;
+    color: #ffffff;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    margin: 0px;
+    font-size: 50px;
+    top: -14px;
+    left: -20px;
+}
+
+.auth_btn{
+    padding: 10px;
+    color: "#ffffff"; 
+    border-color: "#ffffff";
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+}
+
+.f_txt {
+    display: inline-flex;
+    color: #df7d00;
+}
+
+.anserials_txt {
+    display: inline-flex;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin-top: 60px;
+    top: -20px;
+}
+
+.pers_svg{
+    width: 25px;
+    height: 25px;
+    margin-left: 3px;
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+}
+
+%menu_elem{
+    display: inline-block;
+    margin-right: 35px;
+    position: relative;
+}
+
+%menu_elem_on_hover{
+    color: #df7d00;
+}
+
+.new_series {
+    @extend %menu_elem;
+}
+
+.new_series:hover {
+    @extend %menu_elem_on_hover
+}
+
+.popular {
+    @extend %menu_elem;
+}
+
+.popular:hover {
+    @extend %menu_elem_on_hover
+}
+
+.news {
+    @extend %menu_elem;
+}
+
+.news:hover {
+    @extend %menu_elem_on_hover
+}
+
+.all {
+    @extend %menu_elem;
+}
+
+.all:hover {
+    @extend %menu_elem_on_hover
+}
+
+.search {
+    @extend %menu_elem;
+}
+
+.search:hover {
+    @extend %menu_elem_on_hover
+}
+
+.enter {
+    @extend %menu_elem;
+}
+
+.enter:hover {
+    @extend %menu_elem_on_hover
+}
+
+.pic_block {
+    display: block;
+    height: 240px;
+    width: 1980px;
+    background-color: #080808;
+}
+
+.pic_class {
+    display: block;
+    height: 240px;
+    width: 1116px;
+    position: relative;
+    margin: auto;
+}

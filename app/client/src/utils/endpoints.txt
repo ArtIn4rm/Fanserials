@@ -1,0 +1,132 @@
+[public]
+
+/series/list
+/series/list/:page
+/series/category
+/series/category/:page
+
+/orders/list
+/orders/list/:page
+
+/search/query
+
+/serial/:serial/list
+/serial/:serial/list/:page
+/serial/:serial/:season/list
+/serial/:serial/:season/list:page
+
+/serial/:serial/:season/:seria
+/serial/:serial/:season/:seria/:studio
+
+/popular/list
+
+/newest/list
+/newest/list/:page
+
+/all/list
+/all/sort/category/:name
+/all/sort/janre/:name
+/all/sort/mark/:name
+
+/user/registrate
+/user/login
+/user/auth
+
+
+//--------------------------------------------------------------------------------------------------------------------
+[moderator]
+
+/user/moderator
+                /serial/:serial/:season/:seria/comment
+                /serial/:serial/:season/:seria/mark
+                /serial/:serial/:season/:seria/like
+                /serial/:serial/:season/:seria/delete
+                /orders/list/answer/:id
+                /account
+                /account/change
+                /block/:id
+/series/list
+/series/list/:page
+/series/category
+/series/category/:page
+/orders/list
+/orders/list/:page
+/search/query
+/serial/:serial/list
+/serial/:serial/list/:page
+/serial/:serial/:season/list
+/serial/:serial/:season/list:page
+/serial/:serial/:season/:seria
+/serial/:serial/:season/:seria/:studio
+/popular/list
+/newest/list
+/newest/list/:page
+/all/list
+/all/sort/category/:name
+/all/sort/janre/:name
+/all/sort/mark/:name
+
+//--------------------------------------------------------------------------------------------------------------------
+[simp]
+
+
+/user/simp
+                /serial/:serial/:season/:seria/comment
+                /serial/:serial/:season/:seria/mark
+                /serial/:serial/:season/:seria/like
+                /account
+                /account/change
+                /account/sendReq
+/series/list
+/series/list/:page
+/series/category
+/series/category/:page
+/orders/list
+/orders/list/:page
+/search/query
+/serial/:serial/list
+/serial/:serial/list/:page
+/serial/:serial/:season/list
+/serial/:serial/:season/list:page
+/serial/:serial/:season/:seria
+/serial/:serial/:season/:seria/:studio
+/popular/list
+/newest/list
+/newest/list/:page
+/all/list
+/all/sort/category/:name
+/all/sort/janre/:name
+/all/sort/mark/:name
+
+
+//--------------------------------------------------------------------------------------------------------------------
+[admin]
+
+/user/admin
+                /serial/:serial/:season/:seria/comment
+                /serial/:serial/:season/:seria/mark
+                /serial/:serial/:season/:seria/like
+                /serial/:serial/:season/:seria/delete
+                /adding
+                /query
+                /query/:id
+/series/list
+/series/list/:page
+/series/category
+/series/category/:page
+/orders/list
+/orders/list/:page
+/search/query
+/serial/:serial/list
+/serial/:serial/list/:page
+/serial/:serial/:season/list
+/serial/:serial/:season/list:page
+/serial/:serial/:season/:seria
+/serial/:serial/:season/:seria/:studio
+/popular/list
+/newest/list
+/newest/list/:page
+/all/list
+/all/sort/category/:name
+/all/sort/janre/:name
+/all/sort/mark/:name

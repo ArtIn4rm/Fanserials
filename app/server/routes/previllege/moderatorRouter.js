@@ -16,9 +16,9 @@ router.use('/popular', checkRoleMd(['Moderator']), popularRouter)
 router.use('/newest', checkRoleMd(['Moderator']), newestRouter)
 router.use('/all', checkRoleMd(['Moderator']), allRouter)
 
-router.get('/account', checkRoleMd(['Simp']), simpController.getAccount)
-router.post('/account/change', checkRoleMd(['Simp']), simpController.changeInfo)
-
+router.get('/account', checkRoleMd(['Moderator']), simpController.getAccount)
+router.post('/account/change', checkRoleMd(['Moderator']), simpController.changeInfo)
 router.use('/orders', checkRoleMd(['Moderator']),)
+router.use('/block/:id', checkRoleMd(['Moderator']),)
 
 module.exports = router
