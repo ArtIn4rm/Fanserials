@@ -1,0 +1,134 @@
+.search_box {
+    display: block;
+    height: 100%;
+    background-color: #272929;
+    position: relative;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search_txt {
+    color: #ffffff;
+    opacity: .7;
+}
+
+.search_line {
+    display: block;
+    margin-left: 100px;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    width: 1200px;
+    height: 35px;
+    opacity: .7;
+}
+
+.input_line {
+    display: inline-flex;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    line-height: 1.2;
+    text-align: left;
+    z-index: 34;
+    background: #272929 !important;
+    outline: none;
+    width: 1190px;
+    height: 32px;
+    border-width: 0px;
+    padding-left: 8px;
+    padding-right: 0px;
+    opacity: .7;
+}
+
+.search_button {
+    display: block;
+    position: relative;
+    width: 200px;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #ffffff;
+    background-color: #272929;
+    border: 1px solid #df7d00;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.search_button:hover {
+    background-color: #df7d00;
+}
+
+.line_between {
+    display: block;
+    position: relative;
+    width: 1200px;
+    height: 1px;
+    border-bottom: 1px solid #ffffff;
+    margin-left: 100px;
+    margin-top: 20px;
+    opacity: .7;
+}
+
+.search_serial_block {
+    display: inline-block;
+    width: 1200px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 207px;
+}
+
+.search_serial_icon {
+    display: block;
+    height: 207px;
+    position: relative;
+    width: 146px;
+    float: left;
+}
+
+.search_serial_text {
+    display: block;
+    margin-left: 30px;
+    height: 207px;
+    width: 800px;
+    text-align: left;
+    float: left;
+    font-size: 18px;
+}
+
+.search_serial_name {
+    display: block;
+    width: 800px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 20px;
+    position: relative;
+}
+
+.search_serial_txt {
+    display: block;
+    width: 800px;
+    position: relative;
+    height: 137px;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+#search_footer {
+    background-color: #171717;
+}
+
+.search_area{
+    height: 400px;
+}

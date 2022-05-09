@@ -4,7 +4,7 @@ export default class UserState{
     constructor(){
         this._isSimp = false
         this._isModerator = false
-        this._isAdmin = false
+        this._isAdmin = true
         this._user = {}
         makeAutoObservable(this)
     }

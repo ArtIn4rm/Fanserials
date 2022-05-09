@@ -1,0 +1,87 @@
+.popular_block {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.line_between_popular {
+    display: block;
+    position: relative;
+    width: 1120px;
+    height: 1px;
+    border-bottom: 1px solid #4a4a4a;
+    margin-left: 140px;
+    margin-top: 40px;
+    opacity: .7;
+}
+
+#popular_txt {
+    margin-left: 140px;
+}
+
+.popular_block_list {
+    display: inline-flex;
+    position: relative;
+    margin-left: 140px;
+    margin-top: 30px;
+    width: 1120px;
+    height: 360px;
+}
+
+.popular_position {
+    display: inline-flex;
+    position: relative;
+    width: 200px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.popular_icon_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 287px;
+    background-color: #080808;
+    z-index: 10;
+    opacity: .999999;
+}
+
+.popular_icon_box:hover {
+    opacity: .7;
+}
+
+.popular_icon_img {
+    display: block;
+    width: 200px;
+    height: 287px;
+    z-index: 9;
+}
+
+.popular_text_box {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    width: 200px;
+    height: 73px;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.popular_text_box_name {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.popular_text_box_num {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 11px;
+    position: relative;
+}

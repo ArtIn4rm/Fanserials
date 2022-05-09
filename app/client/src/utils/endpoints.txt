@@ -13,7 +13,7 @@
 /serial/:serial/list
 /serial/:serial/list/:page
 /serial/:serial/:season/list
-/serial/:serial/:season/list:page
+/serial/:serial/:season/list/:page
 
 /serial/:serial/:season/:seria
 /serial/:serial/:season/:seria/:studio

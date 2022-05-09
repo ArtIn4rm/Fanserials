@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import {Context} from '../../index'
-import {Navbar, Nav, Button, Container, Pagination} from 'react-bootstrap'
+import {Pagination} from 'react-bootstrap'
 import {observer} from 'mobx-react-lite'
 import SeriesItem from '../../components/SeriesItem'
-import chevron from '../../assets/chevron.svg'
+import chevron from '../../assets/svg/chevron.svg'
 
 const Series = observer(() => {
     const {series} = useContext(Context)
