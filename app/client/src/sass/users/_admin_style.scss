@@ -1,5 +1,5 @@
 .admin_btn{
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .admin_order_row{
@@ -8,4 +8,44 @@
 
 .admin_order_status:hover{
     filter: invert(82%) sepia(54%) saturate(3168%) hue-rotate(71deg) brightness(79%) contrast(84%);
+}
+
+.admin_rej_status:hover{
+    filter: invert(26%) sepia(42%) saturate(2774%) hue-rotate(346deg) brightness(93%) contrast(89%);
+}
+
+
+.admin_orders_block{
+    overflow: auto;
+    height: 400px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.orders_txt_admin{
+    font-size: 30px;
+    margin-left: 630px !important;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.admin_orders_table{
+    margin-top: 2px !important;
+}
+
+.admin_query_username{
+    min-width: 350px !important;
+    color: #df7d00;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 15px !important;
+}
+
+.admin_query_email{
+    min-width: 340px !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: #727676;
 }

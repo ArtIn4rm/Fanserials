@@ -5,8 +5,9 @@ import chevron from '../../assets/svg/chevron.svg'
 import cross from '../../assets/svg/cross.svg'
 import check from '../../assets/svg/check.svg'
 import exclamation from '../../assets/svg/exclamation.svg'
+import {observer} from 'mobx-react-lite'
 
-const Orders = () => {
+const Orders = observer(() => {
     let {orders} = useContext(Context)
     let ordersSorted = sortDate(orders.orders)
 
@@ -67,7 +68,7 @@ const Orders = () => {
         </div>
         </>
     );
-};
+})
 
 function sortDate(orders){
     let months = new Map()

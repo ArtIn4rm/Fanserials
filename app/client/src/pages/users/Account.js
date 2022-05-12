@@ -1,13 +1,29 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import chevron from '../../assets/svg/chevron.svg'
 import {observer} from 'mobx-react-lite'
 import {Context} from '../../index'
 import edit from '../../assets/svg/edit.svg'
 import award from '../../assets/svg/award.svg'
 import exit from '../../assets/svg/exit.svg'
+import ban from '../../assets/svg/ban.svg'
+import ChangeName from '../../components/modal/ChangeName'
+import BanSimp from '../../components/modal/BanSimp'
+import {useLocation} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 const Account = observer(() => {
-    let {account} = useContext(Context)
+    let {account, user} = useContext(Context)
+    const [changeNameVisible, setChangeNameVisible] = useState(false)
+    const [banSimpVisible, setBanSimpVisible] = useState(false)
+    const url = useLocation().pathname
+    let history = useHistory()
+
+    const logout = () => {
+        user.setUser({})
+        user.setIsAuth(false, user.user.role)
+        localStorage.removeItem('token')
+        history.push('/series/list')
+    }
 
     return (
         <>
@@ -27,8 +43,8 @@ const Account = observer(() => {
                                     <tr className="username_row">
                                         <td className="username_head">Имя пользователя:</td>
                                         <td className="username_column">{account.account.name}</td>
-                                        <td className="username_edit_col">
-                                            <a href=""><img className="username_edit_svg" src={edit}/></a>
+                                        <td onClick={(e) => {setChangeNameVisible(true)}} className="username_edit_col">
+                                            <a><img className="username_edit_svg" src={edit}/></a>
                                         </td>
                                     </tr>
                                     <tr className="email_row">
@@ -43,8 +59,13 @@ const Account = observer(() => {
                                 <button className="ava_file_submit">Подтвердить</button>
                             </div>
                             <div className="ava_file_form">
-                                <button className="account_buttons">Отправить заявку на модератора<img className="award_svg"src={award}/></button>
-                                <button className="account_buttons">Выйти<img className="exit_svg"src={exit}/></button>
+
+                                {user.isAuth.isModerator ? 
+                                <button onClick={() => setBanSimpVisible(true)} className="account_buttons">Забанить пользователя<img className="ban_svg" src={ban}/></button>
+                                :
+                                <button className="account_buttons">Отправить заявку на модератора<img className="award_svg" src={award}/></button>
+                                }
+                                <button className="account_buttons" onClick={() => logout()}>Выйти<img className="exit_svg"src={exit}/></button>
                             </div>
                         </div>
                     </div>
@@ -161,6 +182,9 @@ const Account = observer(() => {
             </div>
                 
             </div>
+
+            <ChangeName show={changeNameVisible} onHide={() => setChangeNameVisible(false)}/>
+            <BanSimp show={banSimpVisible} onHide={() => setBanSimpVisible(false)}/>
         </>
     );
 });

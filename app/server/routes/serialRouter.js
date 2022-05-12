@@ -1,7 +1,7 @@
 const Router = require('express')
 const router = new Router()
 
-const authMd = require('../middleware/authMd')
+const checkRoleMd = require('../middleware/checkRoleMd')
 
 router.get('/:serial/list', )
 router.get('/:serial/list/:page',)

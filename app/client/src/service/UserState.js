@@ -4,12 +4,12 @@ export default class UserState{
     constructor(){
         this._isSimp = false
         this._isModerator = false
-        this._isAdmin = true
+        this._isAdmin = false
         this._user = {}
         makeAutoObservable(this)
     }
 
-    setAuth(bool, role){
+    setIsAuth(bool, role){
         switch(role){
             case 'Simp': this._isSimp = bool; break;
             case 'Moderator': this._isModerator = bool; break;

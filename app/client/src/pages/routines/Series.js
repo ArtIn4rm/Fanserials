@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Context} from '../../index'
 import {Pagination} from 'react-bootstrap'
 import {observer} from 'mobx-react-lite'
@@ -7,6 +7,10 @@ import chevron from '../../assets/svg/chevron.svg'
 
 const Series = observer(() => {
     const {series} = useContext(Context)
+
+    /*useEffect(() => {
+
+    }, [])*/
 
     const seriesByDate = findDates(series.series)
 

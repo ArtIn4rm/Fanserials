@@ -1,6 +1,6 @@
 export const USER_ROUTE = '/user'
 export const SIMP_ROUTE = '/user/simp'
-export const MODERATOR_ROUTE = 'user/moderator'
+export const MODERATOR_ROUTE = '/user/moderator'
 export const ADMIN_ROUTE = '/user/admin'
 export const SERIAL_ROUTE = '/serial/:serial/list'
 export const SEASON_ROUTE = '/serial/:serial/:season/list'

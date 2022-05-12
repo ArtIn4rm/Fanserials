@@ -4,8 +4,9 @@ import {Context} from '../index'
 import {Tabs, Tab, Row, Pagination} from 'react-bootstrap'
 import like from '../assets/svg/like.svg'
 import dislike from '../assets/svg/dislike.svg'
+import {observer} from 'mobx-react-lite'
 
-const Seria = () => {
+const Seria = observer(() => {
     const {seria} = useContext(Context)
 
     const comments = sortComments(seria.comments)
@@ -113,7 +114,7 @@ const Seria = () => {
             </div>
         </>
     );
-};
+})
 
 function sortComments(comments){
     let months = new Map()

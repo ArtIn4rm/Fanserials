@@ -30,7 +30,7 @@ const NavBar = observer(() => {
                         <li className="enter"><a href="/orders/list" className="no_decor">Заказы</a></li>
                         <li className="search"><a href="/search/query" className="no_decor">Поиск</a></li>
                         {user.isAuth.isSimp || user.isAuth.isModerator ?
-                            <a href="/user/simp/account"><li className="enter"><Button variant={"outline-dark"} style={authBtn}>Аккаунт<img src={svg} className="pers_svg"/></Button></li></a>
+                            <a href={`/user/${user.isAuth.isSimp ? 'simp' : 'moderator'}/account`}><li className="enter"><Button variant={"outline-dark"} style={authBtn}>Аккаунт<img src={svg} className="pers_svg"/></Button></li></a>
                             :
                             (user.isAuth.isAdmin) ?
                             <a href="/user/admin/adding"><li className="enter"><Button variant={"outline-dark"} style={authBtn}>Админ<img src={svg} className="pers_svg"/></Button></li></a>

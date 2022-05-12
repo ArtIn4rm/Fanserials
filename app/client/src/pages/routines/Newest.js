@@ -2,8 +2,9 @@ import React, {useContext} from 'react';
 import {Context} from '../../index'
 import chevron from '../../assets/svg/chevron.svg'
 import NewestItem from '../../components/NewestItem'
+import {observer} from 'mobx-react-lite'
 
-const Newest = () => {
+const Newest = observer(() => {
     let {newest} = useContext(Context)
     let newestSorted = findMonths(newest.newest)
 
@@ -52,7 +53,7 @@ const Newest = () => {
         </div>
         </>
     );
-};
+})
 
 function findMonths(newest){
     let months = new Map()

@@ -2,8 +2,9 @@ import React, {useContext} from 'react';
 import {Context} from '../../index'
 import {Form, Row} from 'react-bootstrap'
 import chevron from '../../assets/svg/chevron.svg'
+import {observer} from 'mobx-react-lite'
 
-const Search = () => {
+const Search = observer(() => {
     const {matches} = useContext(Context)
     let formStyle = {backgroundColor: "#272929", borderColor: "#ffffff", color: "#ffffff", width: 1200}
     console.log(matches)
@@ -43,6 +44,6 @@ const Search = () => {
         </div>
         </>
     );
-};
+})
 
 export default Search;

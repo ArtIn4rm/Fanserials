@@ -3,6 +3,7 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import { publicRoutes, simpRoutes, moderatorRoutes, adminRoutes} from '../routes';
 import { SERIES_ROUTE } from '../utils/consts';
 import {Context} from '../index'
+import {getRoleUrl} from '../pages/users/Auth'
 
 const AppRouter = () => {
     const {user} = useContext(Context)
@@ -20,7 +21,7 @@ const AppRouter = () => {
             {publicRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} component={Component} exact/>
             )}
-            <Redirect to={SERIES_ROUTE}/>
+            <Redirect to={getRoleUrl(user.user.role) + SERIES_ROUTE}/>
         </Switch>
     );
 };
